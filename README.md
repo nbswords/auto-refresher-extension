@@ -2,7 +2,6 @@
 
 A lightweight Chrome extension (Manifest V3) that auto-refreshes the current tab on a user-defined interval. Each tab has its own timer, so you can refresh several tabs at different rates simultaneously.
 
-<img width="1280" height="800" alt="auto-refresher-2-1280" src="https://github.com/user-attachments/assets/0ad20d3e-acaf-46fc-a5e0-92230900d6e9" />
 <img width="1280" height="800" alt="auto-refresher-1-1280" src="https://github.com/user-attachments/assets/ebd0d8ac-1a53-45a7-987f-3ac11952e623" />
 
 
