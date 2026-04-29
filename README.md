@@ -84,6 +84,10 @@ python generate_icons.py
 
 Pillow is the only dependency (`pip install pillow`).
 
+## Privacy Policy
+
+[Read the full privacy policy](https://nbswords.github.io/auto-refresher-extension/privacy-policy.html)
+
 ## License
 
 MIT

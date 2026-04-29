@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Refresh - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', -apple-system, system-ui, sans-serif;
+      background: #f7f7f9;
+      color: #2d3436;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h1 { font-size: 26px; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #747d8c; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin: 28px 0 10px; }
+    p, li { font-size: 15px; color: #4a4a5a; }
+    ul { padding-left: 22px; margin: 8px 0; }
+    li { margin-bottom: 4px; }
+    a { color: #6c5ce7; }
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 29, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Auto Refresh is a browser extension that automatically reloads the current tab on a user-defined interval. Your privacy is important to us, and this extension is designed with a privacy-first approach.</p>
+
+    <h2>Data Collection</h2>
+    <p>Auto Refresh does <strong>not</strong> collect, store, transmit, or share any user data. Specifically:</p>
+    <ul>
+      <li>No personal information is collected</li>
+      <li>No browsing history or page content is accessed or recorded</li>
+      <li>No cookies or tracking mechanisms are used</li>
+      <li>No data is sent to any external server</li>
+      <li>No analytics or telemetry of any kind is implemented</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The extension requests the following permissions solely to provide its core functionality:</p>
+    <ul>
+      <li><strong>alarms</strong> &mdash; Used for a periodic 30-second keepalive that lets the background service worker re-arm pending refresh timers if Chrome suspends it</li>
+      <li><strong>storage</strong> &mdash; Persists per-tab refresh interval and the next-fire timestamp in <code>chrome.storage.local</code> on your device</li>
+      <li><strong>tabs</strong> &mdash; Calls <code>chrome.tabs.reload()</code> on the tab you started refresh on, and detects when that tab is closed so the timer can be cleared</li>
+    </ul>
+    <p>The extension does not request <code>&lt;all_urls&gt;</code> and does not inject any content scripts into web pages.</p>
+
+    <h2>Local Storage</h2>
+    <p>Two pieces of local-only state are stored:</p>
+    <ul>
+      <li>Per-tab refresh interval and next-fire timestamp (in <code>chrome.storage.local</code>), used to keep timers running across popup close and service worker suspension</li>
+      <li>Theme preference (light/dark mode), saved in the popup&rsquo;s <code>localStorage</code></li>
+    </ul>
+    <p>Neither leaves your device.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>This extension does not use any third-party services, APIs, or SDKs.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this privacy policy is updated, changes will be reflected on this page with an updated date.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue on the extension&rsquo;s <a href="https://github.com/nbswords/auto-refresher-extension">GitHub repository</a>.</p>
+
+    <div class="footer">
+      Auto Refresh &copy; 2026. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
